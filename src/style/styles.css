@@ -1,0 +1,148 @@
+body {
+  background: radial-gradient(
+    96.74% 276.79% at 3.59% 5.28%,
+    #f0f4ff 0%,
+    #a5b6ee 100%
+  );
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Pretendard';
+  text-transform: uppercase;
+}
+
+/* header */
+header {
+  width: 100%;
+}
+
+header .title {
+  width: 244px;
+  display: block;
+  margin: 72px auto 60px;
+}
+
+header .title .logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+  /* temp */
+  height: 360px;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 48px;
+}
+
+.underline {
+  width: 312px;
+  height: 1px;
+  border: 1px solid #3d538a;
+  margin: 23px auto 33px;
+}
+
+.time {
+  width: 284px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* temp */
+  height: 98px;
+}
+
+.time > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time .timer-counter-name {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #a5b6ee;
+}
+
+.time .timer-counter-box,
+.time input {
+  visibility: hidden;
+  z-index: -10;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #354971;
+  border-radius: 4px;
+  background-image: url('../images/box.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.time .timer-counter-box.active {
+  visibility: visible;
+  z-index: 10;
+}
+
+.time .timer-counter-input.active {
+  visibility: visible;
+  z-index: 10;
+}
+
+.time .timer-counter-box .timer-counter-num {
+  display: block;
+  margin: 16px 13px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.buttons {
+  width: 236px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons .start-btn,
+.buttons .reset-btn {
+  width: 50%;
+  background: inherit;
+  border: none;
+}
+
+.buttons .start-btn {
+  margin-right: 12px;
+}
+
+.buttons .start-btn img,
+.buttons .reset-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+#copyright {
+  width: 104px;
+  margin: 60px auto 103px;
+}
+
+.copyright-txt {
+  color: #8596bf;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}

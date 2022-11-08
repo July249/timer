@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/styles.css" />
+    <title>Timer</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="title">
+        <img
+          class="logo-img"
+          src="./src/images/weniv-logo.png"
+          alt="위니브 타이머"
+        />
+      </h1>
+    </header>
+    <article id="app">
+      <h2 class="sub-title">Timer</h2>
+      <div class="underline"></div>
+      <section class="time">
+        <div class="hrs">
+          <span class="timer-counter-name">hrs</span>
+          <div class="timer-counter-box active">
+            <span class="timer-counter-num">00</span>
+          </div>
+          <label for="hour-input"></label>
+          <input id="hour-input" class="timer-counter-input" type="text" />
+        </div>
+        <div class="timer-counter-dots"></div>
+        <div class="min">
+          <span class="timer-counter-name">min</span>
+          <div class="timer-counter-box active">
+            <span class="timer-counter-num">00</span>
+          </div>
+          <label for="minute-input"></label>
+          <input id="minute-input" class="timer-counter-input" type="text" />
+        </div>
+        <div class="timer-counter-dots"></div>
+        <div class="sec">
+          <span class="timer-counter-name">sec</span>
+          <div class="timer-counter-box active">
+            <span class="timer-counter-num">00</span>
+          </div>
+          <label for="second-input"></label>
+          <input id="second-input" class="timer-counter-inpu" type="text" />
+        </div>
+      </section>
+      <div class="buttons">
+        <button class="start-btn" type="button">
+          <img src="./src/images/button/start-disabled.png" alt="" />
+        </button>
+        <button class="reset-btn" type="button">
+          <img src="./src/images/button/reset-disabled.png" alt="" />
+        </button>
+      </div>
+    </article>
+    <footer id="copyright">
+      <p class="copyright-txt">&copy WENIV CORP.</p>
+    </footer>
+  </body>
+</html>
